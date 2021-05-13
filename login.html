@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Lifestyle Store</title>
+    <title>Login</title>
     <meta name="description" content="">
     <meta name="author" content="Chinmay Joshi">
     <link rel="stylesheet" href="css/styles.css">
@@ -24,21 +24,36 @@
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="signup.html" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                            <li><a href="login.html" target="_blank"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            <li><a href="login.html" target="_self"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-           <div id="banner-image">
-               <div class="container">
-                <div id="banner-content">
-                    <h1>We sell lifestyle.</h1>
-                    <p>Flat 40% OFF on premium brands</p>
-                    <a href="products.html" class="btn btn-danger btn-lg active">Shop Now</a>
+        <div class="container">
+            <div class="row row_style">
+                <div class="col-xs-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>LOGIN</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="text-warning">Login to make a purchase</div>
+                            <form>
+                                <div class="form-group">
+                                    <input type="text"  class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text"  class="form-control" name="lastname" id="lastname" placeholder="Last Name">
+                                </div>
+                            </form>
+                            <button class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="panel-footer">Don't have an account? <a href="signup.html" class="reg">Register</a></div>
+                    </div>
                 </div>
-               </div>
-           </div>
+            </div>
+        </div>
        <footer>
            <div class="container">
                <p style="text-align: center;">Copyright © Lifestyle Store. All Rights
