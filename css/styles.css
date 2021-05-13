@@ -29,6 +29,7 @@ footer{
 }
 .text-warning{
     margin-bottom: 10px;
+    text-align: center;
 }
 .reg{
     color: blue;
@@ -54,4 +55,35 @@ footer{
 }
 .table{
     border-top: none;
+}
+#panel-s{
+    border: none;
+}
+.panel-title{
+    font-weight: bold;
+}
+.panel-body-form{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+}
+#success-title{
+    text-align: center;
+}
+.continue{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color:whitesmoke;
+}
+.panel-align{
+    margin-left: 50%;
+    margin-top: 25%;
+    width: 100%;
+}
+a{
+    display: block;
+    color: white;
 }
