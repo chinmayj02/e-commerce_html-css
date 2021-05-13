@@ -16,12 +16,13 @@
     max-width: 660px;
 }
 footer{
-    padding: 10px 0;
-    background-color: #101010;
-    color:#9d9d9d;
-    bottom: length;
-    width: 100%;
-    margin-top: auto;
+    position: fixed;
+	padding: 10px 0;
+	text-align: center;
+	bottom: 0;
+	background-color: #101010;
+	color: #9d9d9d;
+	width: 100%;
 }
 .row_style{
     margin-top:50px;
@@ -43,4 +44,14 @@ footer{
 }
 .signup-btn{
     margin-bottom: 10px;
+}
+.panel-margin {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.text-lighter{
+    color: rgba(0, 0, 0, 0.6);
+}
+.table{
+    border-top: none;
 }
