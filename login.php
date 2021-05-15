@@ -35,7 +35,7 @@
                                     <input type="password"  class="form-control" name="password" placeholder="Password" required>
                                 </div>
                             
-                            <button type="submit" class="btn btn-primary" value="insert">Login</button>
+                            <button type="submit" class="btn btn-primary" value="fetch">Login</button>
                             </form>
                         </div>
                         <div class="panel-footer">Don't have an account? <a href="signup.php" class="reg">Register</a></div>

@@ -32,7 +32,16 @@
 						<div class="caption">
 							<h3>Cannon EOS</h3>
 							<p>Price: Rs.36000.00</p>
-							<button type="button" class="btn btn-primary btn-block">Add to cart</button>
+							<?php 
+							if(!isset($_SESSION['email_id'])){ ?>
+								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
+							<?php } else {
+							     if(check_if_added_to_cart(1)){ ?>
+								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
+								 <?php } else { ?>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+								 <?php } 
+							}?>
 						</div>
 					</div>
 				</div>
