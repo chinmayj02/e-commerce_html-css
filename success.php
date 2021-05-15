@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Login</title>
+    <title>Success</title>
     <meta name="description" content="">
     <meta name="author" content="Chinmay Joshi">
     <link rel="stylesheet" href="css/styles.css">
@@ -19,11 +19,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                         </button>
-                        <a class="navbar-brand" href="index.html">Lifestyle Store</a>
+                        <a class="navbar-brand" href="index.php">Lifestyle Store</a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="signup.html" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                            <li><a href="signup.php" target="_self"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="index.php" target="_self"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -32,32 +34,23 @@
         <div class="container">
             <div class="row row_style">
                 <div class="col-xs-6">
-                    <div class="panel panel-primary">
+                    <div class="panel panel-primary panel-align">
                         <div class="panel-heading">
-                            <h4>LOGIN</h4>
+                            <h4 id="success-title">Congratulations!</h4>
                         </div>
                         <div class="panel-body">
-                            <div class="text-warning">Login to continue</div>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text"  class="form-control" id="firstname" name="firstname" placeholder="First Name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text"  class="form-control" name="lastname" id="lastname" placeholder="Last Name">
-                                </div>
-                            </form>
-                            <button class="btn btn-primary"><a href="logged-in-home.html">Login</a></button>
+                            <div class="text-warning">
+                                Your Order Is Successfully Placed.<br>
+                                Thank You For Shopping With Us.
+                            </div>
+                            <div class="btn btn-primary btn-block"><a href="products.php" class="continue">Continue Shopping</a></div>
                         </div>
-                        <div class="panel-footer">Don't have an account? <a href="signup.html" class="reg">Register</a></div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="container">
-                <p style="text-align: center;">Copyright <span class="glyphicon glyphicon-copyright-mark"></span> Lifestyle Store. All Rights
-                 Reserved | Contact Us: +91 90000 00000</p>
-            </div>
-        </footer>
+        <?php 
+                include "includes/footer.php";
+            ?> 
     </body>
 </html>
