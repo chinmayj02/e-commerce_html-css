@@ -272,8 +272,6 @@
 
 
 
-
-
 <?php
     include "include/common.php" 
     $query = "select * from products";
