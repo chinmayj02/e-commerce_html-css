@@ -3,6 +3,7 @@
     if(!isset($_SESSION["email"])){
     header("location: index.php");}
     $old_password = $_POST['old_password'];
+    die($old_password);
     $safe_old_pass = md5($old_password);
     $new_password = $_POST['new_password'];
     $safe_new_pass = md5($new_password);
@@ -14,7 +15,7 @@
     $password = $row['password'];
     $update = "update users u set password = '$safe_new_pass' where u.id = '{$_SESSION['id']}' and u.password = '$safe_old_pass'";
 
-    die($old_password);
+    
 
     if(($safe_new_pass===$safe_retyped_pass) && ($safe_old_pass===$password)){
         $submit_update = mysqli_query($conn,$update) or die(mysqli_error());
