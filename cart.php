@@ -29,30 +29,28 @@
                 echo '<h4 class="container panel-margin">Add products to cart first. Goto <a href="products.php">Products</a> page.</h4>';
             }else{
                     $sum = 0;
-                    ?>
+            } ?>
         <div class="container panel-margin">
             <table class="table table-hover">
                 <tr>
-                    <th>Item Number</th>
+                    <th>Unique Item Number</th>
                     <th>Item Name</th>
-                    <th>Price</th>
+                    <th>Price (in Rupees)</th>
                     <th></th>
                 </tr>
                 <?php while($row = mysqli_fetch_array($check)){ ?>
                 <tr>
-                    <td><?php echo $row["id"] ?></td>
-                    <td><?php echo $row["name"] ?></td>
-                    <td><?php $sum += $row["price"]; echo $row["price"] ?></td>
-                    <td><a href="cart-remove.php?id=$row['id']" class='remove_item_link'>Remove</a></td>
+                    <td><?php $product_id = $row['id']; echo $row['id'] ?></td>
+                    <td><?php echo $row['name'] ?></td>
+                    <td><?php $sum += $row['price']; echo $row['price'] ?></td>
+                    <td><a href="cart_remove.php?id='$product_id'" class="btn btn-danger btn-block">Remove</a></td>
                 </tr>
-                <?php
-                    }
-                ?>
+                <?php } ?>
                 <tr>
                     <td></td>
                     <td>Total:</td>
-                    <td>Rs.<?php echo $sum; ?></td>
-                    <td><a href="success.php?id=$row['id']" class="btn btn-primary">Confirm Order</a></td>
+                    <td><?php echo $sum; ?></td>
+                    <td><a href="success.php?id=$row['id']" class="btn btn-primary btn-block">Confirm Order</a></td>
                 </tr>
             </table>
         </div>

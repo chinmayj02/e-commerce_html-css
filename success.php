@@ -31,7 +31,7 @@
                         <div class="panel-body">
                         <?php
                             $product_id = $_GET['id'];
-                            $fetch = "update users_products up set status = 'Confirmed' where up.user_id = '$_SESSION['id']' and up.product_id = '$product_id'";
+                            $fetch = "update users_products up set status = 'Confirmed' where up.user_id = '{$_SESSION['id']}' and up.product_id = '$product_id'";
                             $submit = mysqli_query($conn,$fetch)
                         ?>
                             <div class="text-warning">
