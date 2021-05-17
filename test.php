@@ -59,10 +59,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(2)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=2" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -78,10 +78,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(3)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=3" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -97,10 +97,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(4)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=4" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -118,10 +118,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(5)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=5" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -137,10 +137,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(6)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=6" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -156,10 +156,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(7)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=7" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -175,10 +175,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(8)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=8" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -196,10 +196,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(9)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=9" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -215,10 +215,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(10)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=10" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -234,10 +234,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(11)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=11" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -253,10 +253,10 @@
 							if(!isset($_SESSION['email'])){ ?>
 								<a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
 							<?php } else {
-							     if(check_if_added_to_cart(12)){ ?>
+							     if(check_if_added_to_cart(1)){ ?>
 								 	<button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
 								 <?php } else { ?>
-									<a href="cart-add.php?id=12" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+									<a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
 								 <?php } 
 							}?>
 						</div>
@@ -269,3 +269,34 @@
             ?> 
     </body>
 </html>
+
+
+
+
+
+<?php
+    include "include/common.php" 
+    $query = "select * from products";
+    $result = mysqli_query($conn,$query);
+    $rows = mysqli_fetch_array($result);
+    for ($i=1,$i<=mysqli_num_rows($rows);$i++){ ?>
+        <div class="col-md-3 col-sm-6">
+            <div class="thumbnail">
+                <div><?php echo $rows[i][thumbnail] ?></div>
+                <div class="caption">
+                    <h3><?php echo $rows[i][name] ?></h3>
+                    <p>Price: Rs.<?php echo $rows[i][price] ?></p>
+                    <?php 
+                    if(!isset($_SESSION['email'])){ ?>
+                    <a href="login.php"><button type="button" class="btn btn-primary btn-block">Add to cart</button></a>
+                    <?php } else {
+                    if(check_if_added_to_cart(1)){ ?>
+                        <button type="button" class="btn btn-primary btn-block" disabled>Add to cart</button>
+                     <?php } else { ?>
+                        <a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+                     <?php } 
+                    }?>
+                </div>
+             </div>
+         </div>
+    <?php }?>

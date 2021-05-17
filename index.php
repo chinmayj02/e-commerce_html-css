@@ -1,7 +1,4 @@
 <?php
-	if(isset($_SESSION["email_id"])){
-		header("location: products.php");
-	}
 	require "includes/common.php";
 ?>
 <!doctype html>
@@ -26,7 +23,13 @@
                 <div id="banner-content">
                     <h1>We sell lifestyle.</h1>
                     <p>Flat 40% OFF on premium brands</p>
-                    <a href="login.php" class="btn btn-danger btn-lg active">Shop Now</a>
+                    <?php 
+                        if(!isset($_SESSION["email"])){ ?>
+                            <a href="login.php" class="btn btn-danger btn-lg active">Shop Now</a>
+                        <?php } else{ ?>
+                            <a href="products.php" class="btn btn-danger btn-lg active">Shop Now</a>
+                       <?php } ?>
+                    
                 </div>
                </div>
            </div>

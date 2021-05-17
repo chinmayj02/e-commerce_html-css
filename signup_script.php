@@ -17,8 +17,11 @@
 	else
 	{
 		$submit = mysqli_query($conn,$insert) or die(mysqli_error($conn));
+		session_start();
 		$_SESSION['email'] = $email;
 		$_SESSION['id'] =  mysqli_insert_id($conn);
-		header("location: products.php");
+		if(isset($_SESSION['email'])){
+			header("location: products.php");
+		}
 	}
 ?>
