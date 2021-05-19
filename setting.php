@@ -26,15 +26,15 @@
 					<h2 class="panel-title">Change Password</h2>
 				</div>
 				<div >
-					<form method="POST" action="setting_script.php">
+					<form method="post" action="setting_script.php">
                         <div class="form-group">
-                            <input type="password"  class="form-control" name="old_password" placeholder="Old Password" required>
+                            <input type="password"  class="form-control" name=1 placeholder="Old Password" required>
                         </div>
                         <div class="form-group">
-                            <input type="password"  class="form-control" name="new_password" placeholder="New Password" required>
+                            <input type="password"  class="form-control" name=2 placeholder="New Password" required>
                         </div>
                         <div class="form-group">
-                            <input type="password"  class="form-control" name="retyped_password" placeholder="Re-type New Password" required>
+                            <input type="password"  class="form-control" name=3 placeholder="Re-type New Password" required>
                         </div>
                     </form>
                    <a href="setting_script.php"> <button type="submit" class="btn btn-primary signup-btn">Change</button></a>

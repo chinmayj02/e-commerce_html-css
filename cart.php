@@ -25,8 +25,8 @@
             $user_id = $_SESSION['id'];
             $fetch = "select p.id,p.name,p.price from products p inner join users_products up on p.id = up.product_id";
             $check = mysqli_query($conn,$fetch) or die(mysqli_error($conn));
-            if(mysqli_num_rows($check) == 0){
-                echo '  <div class="container">
+            if(mysqli_num_rows($check) == 0){ ?>
+                  <div class="container">
                 <div class="row row_style">
                     <div class="col-xs-6">
                         <div class="panel panel-primary panel-align">
@@ -42,7 +42,8 @@
             </div>
             </div>
             </div>
-            </div>';
+            </div> 
+            <?php 
             die();
             }else{
                     $sum = 0;
@@ -57,17 +58,19 @@
                 </tr>
                 <?php while($row = mysqli_fetch_array($check)){ ?>
                 <tr>
-                    <td><?php $product_id = $row['id']; echo $product_id ?></td>
+                    <td><?php echo $row['id'];  ?></td>
                     <td><?php echo $row['name'] ?></td>
                     <td><?php $sum += $row['price']; echo $row['price'] ?></td>
-                    <td><a href="cart_remove.php?id=1" class="btn btn-danger btn-block">Remove</a></td>
+                    <!-- <td><a href="cart_remove.php?id={$row['id']}" class='remove_item_link btn btn-block btn-danger'> Remove</a></td> -->
                 </tr>
                 <?php } ?>
                 <tr>
                     <td></td>
-                    <td>Total:</td>
-                    <td><?php echo $sum; ?></td>
-                    <td><a href="success.php?id=$row['id']" class="btn btn-primary btn-block">Confirm Order</a></td>
+                    <td><strong>Total:</strong></td>
+                    <td><strong><?php echo $sum; ?></strong></td>
+                </tr>
+                <tr>
+                <td colspan="3"><a href="success.php?id=$row['id']" class="btn btn-primary btn-block">Confirm Order</a></td>
                 </tr>
             </table>
         </div>
