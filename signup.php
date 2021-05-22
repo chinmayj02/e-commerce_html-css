@@ -1,5 +1,5 @@
 <?php
-    if(isset($_SESSION["email_id"])){
+    if(isset($_SESSION["email"])){
     header("location: products.php");
 }
 	require 'includes/common.php';
